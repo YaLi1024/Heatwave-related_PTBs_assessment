@@ -1,7 +1,7 @@
 # Heatwave-related_PTBs_assessment
 Updated R code and data for original research "Heatwave exposure and preterm birth in China: attributable disease burden and human capital consequences"
 
-############################################################################################################################################
+############################################################################################
 
 A methodologic framework to estimate the heatwave-related preterm births(PTBs) of China in the actual climate and from anthropogenic climate change based on the simulated scenarios.The main methodological steps and essential elements are listed as following:
 
