@@ -11,4 +11,4 @@ Files in the "code" folder
 3. _07- Human capital consequence estimates.R_ performs the last step of the article.
 
 Raw data are all stored in the "data" folder. 
-The introduction and usage of these data have been detailed introduced at the top of corresponding R script list above.
+The description and usage of these data have been detailed introduced at the top of corresponding R script list above.
