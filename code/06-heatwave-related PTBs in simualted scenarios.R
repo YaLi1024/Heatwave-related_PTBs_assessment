@@ -79,7 +79,6 @@ fun <- function(dat,pathway,province,i){
       for (l in 1:nsim){
         RR = RR_estimates[l]
         AF = (RR-1)/RR
-        #假设6月和9月每个月31天，简化运算
         est <- est0*AF
         estimates[(k-1)*nsim+l] <- as.numeric(est)
       }
