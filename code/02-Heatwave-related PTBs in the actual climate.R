@@ -1,8 +1,7 @@
-##########################################################################
+##################################################################################################
 # Updated version of the R code for the analysis in:
 #
-#  "Heatwave exposure and preterm birth in China: attributable disease burden and
-#   human capital consequences"
+#  "The burden of heatwave-related preterm births and associated human capital losses in China"
 # 
 #
 # Update: 6 Nov. 2022
@@ -14,16 +13,16 @@
 #  - 'ncdf4' package version 1.17
 #  - 'readr' package version 1.4.0
 #  - 'readxl' package version 1.3.1
-########################################################################################
+##################################################################################################
 rm(list=ls())
 library(ncdf4)
 library(readr)
 library(readxl)
 
-########################################################################################
+##################################################################################################
 # 02.CALCULATION OF HEATWAVE-ATTRIBUTABLE PTBS IN OF CHINA DURING 2010-2020
 #     IN THE ACTUAL CLIAMTE.
-########################################################################################
+##################################################################################################
 # We can estimate the baseline preterm birth (PTB) number for each day during 
 #     2010-2020 for each grid in China.
 # By identifying if there was at least a heatwave between day(t-6) to day(t) 
@@ -48,10 +47,10 @@ library(readxl)
 #     temperature series and heatwave definition.
 
 
-############################################################################################
+#################################################################################################
 ##  ESTIMATE THE BASELINE GRIDDED PTB NUMBER FOR EACH DAY IN WARM SEASONS DURING 2010-2020   
 
-## 1) Load global population number during 1950-2020 ######################################
+## 1) Load global population number during 1950-2020 ############################################
   ncpop<-nc_open("global_demographics_1950_2020.nc")
   
   lon <- ncvar_get(ncpop,"longitude")
@@ -75,7 +74,7 @@ library(readxl)
     }
   }
 
-## 2) Obtain gridded population number during 2010-2020 for China #########################
+## 2) Obtain gridded population number during 2010-2020 for China ###############################
 # obtain the longitude and latitude,then extract the data for China
   grid_hwdays_data = read_csv("grid_HWdays_May.csv")
   grid_pop_china=grid_hwdays_data
@@ -89,7 +88,7 @@ library(readxl)
    }
   head(grid_pop_china) 
 
-## 3) Calculate the annual living birth number during 2010-2020 for China ###################
+## 3) Calculate the annual living birth number during 2010-2020 for China #######################
 # 1979-2020nation_birth_rate.xlsx provides the provincial birth rates (‰,per thousand).
 # We assumed that the birth rate of specific grid is equal to birth rate of the province 
 #     that the grid belongs to.
@@ -186,7 +185,7 @@ library(readxl)
   write_excel_csv(province_PTB_warm,"province_PTB_warm.csv")
 
 
-#################################################################################################
+#####################################################################################################
 # ESTIMATE THE HEATWAVE-RELATED PTBS BASED ON THE BASELINE PTB NUMBER ON EACH DAY FOR EACH GRID 
 # We can dertermine premature infants in each day (t) whose mother have experienced heatwaves
 #     in their last gestational week based on the temperature series and heatwave definition.
