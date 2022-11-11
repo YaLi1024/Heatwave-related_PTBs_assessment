@@ -1,18 +1,18 @@
-##########################################################################
+################################################################################################
 # Updated version of the R code for the analysis in:
 #
-#  "Heatwave exposure and preterm birth in China: attributable disease burden and
-#   human capital consequences"
+#  "The burden of heatwave-related preterm births and associated human capital losses in China"
 # 
 #
-# Update: 30 6 Nov. 2022
+# Update: 11 Nov. 2022
 # * an updated version of this code is available at:
 #   https://github.com/YaLi1024/Heatwave-related_PTBs_assessment
 #
-########################################################################################
+################################################################################################
 ##04 CALCULATE THE HUMAN CAPITAL CONSEQUENCES OF ATTRIBUTABLE PTBS IN THE ACTUAL CLIMATE OR 
 ##  THOSE CAUSED BY ANTHROPOGENIC CLIMATE CHANGE
-########################################################################################
+#
+################################################################################################
 # The data we used include:
 #   - the prevalence of specific human capital (P_conseq) obtained from existing research
 #   - national PTB rate (P_ptb) from existing research
@@ -22,7 +22,7 @@
 #     climate change, which have been calculated in "02-Heatwave-related PTBs in the actual 
 #     climate.R" and "03-heatwave-related PTBs in simualted scenarios.R".
 
-############################################################################################
+################################################################################################
 # create a function to calculate the impacts on human capital indicators (without reduced IQ)
 additional_HCs = function(P_conseq,P_ptb,RR,nPTB){
   I0 <- P_conseq/(P_ptb*RR + (1-P_ptb))
