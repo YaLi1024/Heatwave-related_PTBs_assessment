@@ -1,8 +1,7 @@
-##########################################################################
+###############################################################################################
 # Updated version of the R code for the analysis in:
 #
-#  "Heatwave exposure and preterm birth in China: attributable disease burden and
-#   human capital consequences"
+#  "The burden of heatwave-related preterm births and associated human capital losses in China"
 # 
 #
 # Update: 6 Nov. 2022
@@ -13,14 +12,14 @@
 #  - R version 4.1.0
 #  - 'readr' package version 1.4.0
 #  - 'tidyverse' package version 1.3.1
-##########################################################################
+################################################################################################
 rm(list=ls())
 gc()
 library(ncdf4)
 library(readr)
 library(tidyverse)
 
-##########################################################################
+################################################################################################
 # 01. CALIBRATE THE SIMULATED TEMPERATURES, IDENTIFY HEATWAVES FOR EACH MODEL
 #     AND CALCULATE THE HEATWAVE DAYS FOR FACTUAL AND COUNTERFACTUAL SCENARIOS
 #
@@ -37,8 +36,8 @@ library(tidyverse)
 #  -Simulated tempertures for factual and counterfactual scenarios stored in "hist" 
 #     and "nat" files 
 
-##########################################################################
-##########################################################################
+################################################################################################
+################################################################################################
 ## REORGANIZE THE OBSERVED TEMPERATURE SERIES.
 # Load the observed temperatures
 ncintmax <- nc_open("/Volumes/Grace_PSSD/analysis/data/2.ERA5/era5_1979-2019_dailyx4_tmax_daymax.nc")
