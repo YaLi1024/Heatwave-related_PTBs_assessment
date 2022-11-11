@@ -1,10 +1,9 @@
 ####################################################################################################
 # Updated version of the R code for the analysis in:
 #
-#  "Heatwave exposure and preterm birth in China: attributable disease burden and
-#   human capital consequences"
+#  "The burden of heatwave-related preterm births and associated human capital losses in China"
 #
-# Update: 6 Nov. 2022
+# Update: 11 Nov. 2022
 # * an updated version of this code is available at:
 #   https://github.com/YaLi1024/Heatwave-related_PTBs_assessment
 #
@@ -14,13 +13,13 @@
 #  - 'dplyr' package version  1.0.6
 #  - 'tidyverse' package version 1.3.1
 #  - 'abind' package version 1.4.5
-##########################################################################
+##################################################################################################
 library(readr)
 library(dplyr)
 library(tidyverse)
 library(abind)
 
-###############################################################################
+##################################################################################################
 # 01. CALIBRATE THE SIMULATED TEMPERATURES, IDENTIFY HEATWAVES FOR EACH MODEL
 #     AND CALCULATE THE HEATWAVE DAYS FOR FACTUAL AND COUNTERFACTUAL SCENARIOS
 #
@@ -202,7 +201,7 @@ for (n in 1:10){
   gc()
 
   
-#################################################################################################
+############################################################################################################
 ### USE THE CALIBRATED TEMPERATURES TO IDENTIFY  HEATWAVES IN THE COUNTERFACTUAL SCENARIO
 ## 1) Identify heatwaves for the facutal scenario during 1979-2020 
   grid_tmax_mod <- grid_mod_nat
