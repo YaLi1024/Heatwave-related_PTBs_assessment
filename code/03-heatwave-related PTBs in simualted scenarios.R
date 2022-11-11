@@ -1,11 +1,10 @@
-##########################################################################################
+###################################################################################################
 # Updated version of the R code for the analysis in:
 #
-#  "Heatwave exposure and preterm birth in China: attributable disease burden and
-#   human capital consequences"
+#  "The burden of heatwave-related preterm births and associated human capital losses in China"
 # 
 #
-# Update: 6 Nov. 2022
+# Update: 11 Nov. 2022
 # * an updated version of this code is available at:
 #   https://github.com/YaLi1024/Heatwave-related_PTBs_assessment
 #
@@ -15,7 +14,7 @@
 #  - 'readr' package version 1.4.0
 #  - 'doParallel' package version 1.0.16
 #  - 'foreach' package version 1.5.1
-##########################################################################################
+##################################################################################################
 rm(list=ls())
 gc()
 library(tidyverse)
@@ -35,7 +34,7 @@ library(foreach)
 #      2. ten 'X cal nat_gridhwpre1w_month.csv' stored in 'nat-cal/pre1w/', X is the num of models 
 #      ranging from 1 to 10
 
-#######################################################################################################
+#####################################################################################################
 # CALCULATE THE ATTRIBUTABLE PTBS
 
 files=list.files('hist-cal/',pattern="*.csv")
