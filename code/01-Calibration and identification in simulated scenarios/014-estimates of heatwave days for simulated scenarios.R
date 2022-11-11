@@ -1,10 +1,9 @@
 ####################################################################################################
 # Updated version of the R code for the analysis in:
 #
-#  "Heatwave exposure and preterm birth in China: attributable disease burden and
-#   human capital consequences"
+#  "The burden of heatwave-related preterm births and associated human capital losses in China"
 #
-# Update: 6 Nov. 2022
+# Update: 11 Nov. 2022
 # * an updated version of this code is available at:
 #   https://github.com/YaLi1024/Heatwave-related_PTBs_assessment
 #
