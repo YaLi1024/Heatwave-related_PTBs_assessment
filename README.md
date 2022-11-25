@@ -1,5 +1,5 @@
 # Heatwave-related_PTBs_assessment
-Updated R code and data for original research "Heatwave exposure and preterm birth in China: attributable disease burden and human capital consequences"
+Updated R code and data for original research "The burden of heatwave-related preterm births and associated human capital losses in China"
 
 ###################################################################################################
 
@@ -11,5 +11,5 @@ Files in the "code" folder
 3. _03-heatwave-related PTBs in simualted scenarios.R_ evaluate the heatwave-related PTBs in the factual and counterfactual scenarios and those caused by anthropogenic climate change.
 4. _04- Human capital consequence estimates.R_ calculate human capital consequences of attributable PTBs in the actual climate and those caused by anthropogenic climate change.
 
-The description and usage of these data have been detailed introduced at the top of corresponding R script listed above.
+The description and usage of these codes have been detailed introduced at the top of corresponding R script listed above.
 Key data sources have been listed in _Data avaliability_ of the research article. Other suport data are uploaded here as well.
